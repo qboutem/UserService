@@ -1,0 +1,23 @@
+jwt:
+    lifetime: 30m
+    secret: privetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivetprivet4444
+server:
+    port: 8080
+spring:
+    application:
+        name: UserServiceRoman
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: gromenko23
+        url: jdbc:mysql://localhost:3306/userdb
+        username: root
+    jpa:
+        defer-datasource-initialization: false
+        hibernate:
+            ddl-auto: none
+    liquibase:
+        change-log: classpath:/db/changelog/db.changelog-master.yaml
+        enabled: true
+    sql:
+        init:
+            mode: always
